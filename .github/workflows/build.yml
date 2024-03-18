@@ -19,7 +19,7 @@ jobs:
           # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
       - name:  Install sonar-scanner and build-wrapper
-        uses: claire-villard-sonarsource/sonarqube-github-c-cpp
+        uses: claire-villard-sonarsource/sonarqube-github-c-cpp@8caf0e2c4fea34d6d241b86e73a520f4bb06624b
         env:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
       - name: Run build-wrapper
