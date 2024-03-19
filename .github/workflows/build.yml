@@ -21,7 +21,7 @@ jobs:
       - name: Set up msbuild
         uses: microsoft/setup-msbuild@v1.0.2
       - name:  Install sonar-scanner and build-wrapper
-        uses: claire-villard-sonarsource/sonarqube-github-c-cpp@8caf0e2c4fea34d6d241b86e73a520f4bb06624b
+        uses: SonarSource/sonarqube-github-c-cpp@c656a5d6a58c27e106717bbf0b529a0b84e776f9
         env:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
       - name: Run build-wrapper
